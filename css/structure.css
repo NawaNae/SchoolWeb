@@ -1,0 +1,45 @@
+﻿*{font-family:'微軟正黑體';
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          text-align:center;
+}
+
+html,body,.container{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+.container{min-height:100%;}
+.header,.footer{
+
+}    
+.footer{
+ z-index:-1;
+}
+.footer{
+position: absolute;
+bottom:100px;
+right:50px;
+}
+.backgroundInfo {
+    text-align:left;
+    z-index:-1;
+    position: absolute;
+    bottom: 150px;
+    right: 50px;
+}
+.authorClick {
+    position: absolute;
+    bottom: 130px;
+    right: 50px;
+}
+.content{
+padding-top:10px;
+padding-bottom:10px;
+padding-left:15px;
+padding-right:15px;
+overflow:auto;
+/*background-color:black;
+color:white;*/
+}
+

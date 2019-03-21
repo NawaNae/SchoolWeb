@@ -1,0 +1,71 @@
+<style>h3{text-align:left;color:red}
+h2{color:rgba(152,73,182,0.9);}
+</style>
+<h1>第一小題 比較三者相同相異處</h1>
+<div class="PictureCard">
+<h3 style="color:blue">相同處:因為都是變數，所以都可以改變存的內容</h3>
+</div>
+<div class="PictureCard">
+<h2>一般變數</h2>
+<h3>相異處:代表的就是同一個變數，存的內容即是其宣告的類型值、無法一次宣告多變數</h3>
+程式碼
+<pre class="prettyprint">
+int i=0;
+i++;
+printf("%d",i);
+</pre>
+</div>
+<div class="PictureCard">
+<h2>指標變數</h2>
+<h3>相異處:存的內容是一個位址，因為不搭配*運算子(取得位址之內容)幾乎無用，所以實用上因為改變了位址所以造成不同的變數，也可以搭配malloc()、calloc()、free()造成宣告多變數的效果、並且可透過對位址做加法，用索引(index)控制多變數。</h3>
+程式碼(改變指向的對象 取值就變成不同變數)
+<pre class="prettyprint">
+int i=0,j=1,k=2;
+int* ptr=&i;
+printf("用指標取i=%d\ti=%d\n",*ptr,i);
+ptr=&j;
+printf("用指標取j=%d\tj=%d\n",*ptr,j);
+ptr=&k;
+printf("用指標取k=%d\tk=%d\n",*ptr,k);
+</pre>
+程式碼(用malloc宣告一串變數)
+<pre class="prettyprint">
+int i;
+int *arr = malloc(size * sizeof(int));
+printf("顯示初始元素值：\n");
+for( i = 0; i < size; i++) {
+    printf("arr[%d] = %d\n", i, *(arr+i));
+}
+printf("顯示元素值(用i來指派)：\n");
+for( i = 0; i < size; i++) {
+    *(arr+i)=i;//透過加法來做index
+    printf("arr[%d] = %d\n", i, *(arr+i));
+ }
+ free(arr);//釋放arr
+</pre>
+</div>
+<div class="PictureCard">
+<h2>陣列</h2>
+<h3>相異處:一次宣告很多個變數(主要的不同處)，還可以宣告多維，並且可以直接用索引(中括號內)的整數來選取要第幾個變數，如果沒有中括號只有陣列名稱，則是其第0個變數所存的位址，所以可以用指標陣列的方法作加法來取得陣列內地N個變數的值(不同處就是比較好宣告，不用用一堆函數，而且支援多維)。</h3>
+程式碼
+<pre class="prettyprint">
+int a[5]={0,1,2,3,4};
+int b[2][2]={{0,1},{3,4}};
+int i=0;
+for(i=0;i<5;i++)
+{
+    printf("a[%d]=%d\t",i,a[i]);//一般用法
+    printf("*(a+%d)=%d\n",i,*(a+i));//指標加法用法
+}
+for(i=0;i<2;i++)
+{
+    for(j=0;j<2;j++)
+    {
+        printf("b[%d][%d]=%d\t",i,j,b[i][j]);//二維陣列
+    }
+    printf("\n");
+}
+</pre>
+</div>
+<script type="text/javascript" src="code-prettify-master/loader/run_prettify.js"></script>
+<button class="google commentButton">G+留言</button>               

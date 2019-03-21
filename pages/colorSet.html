@@ -1,0 +1,19 @@
+<script>
+    var ColorSelect = document.querySelector('.colorSelect');
+    initColorSelect();
+    function initColorSelect()
+    {
+        
+        ColorSelect.querySelector('.red').value = r;
+        ColorSelect.querySelector('.green').value = g;
+        ColorSelect.querySelector('.blue').value = b;
+        ColorSelect.querySelector('.alpha').value = a;
+    }
+</script>
+<div class="colorSelect" style=""  >
+    <div class="color" style="width:64px;height:64px"></div>
+    R<input  class="red" type="range" step="1" max="255" min="0" onchange="this.onmousemove();" onmousemove="r = this.value; setColor(r, g, b, a, this); setAeroCssColor(r, g, b, a); setCookieAeroColor()" /><br>
+    G<input class="green" type="range" step="1" max="255" min="0"  onchange="this.onmousemove();" onmousemove="g = this.value; setColor(r, g, b, a,this); setAeroCssColor(r, g, b, a); setCookieAeroColor()" /><br>
+    B<input  class="blue" type="range" step="1" max="255" min="0"  onchange="this.onmousemove();" onmousemove="b = this.value; setColor(r, g, b, a,this); setAeroCssColor(r, g, b, a); setCookieAeroColor()" /><br>
+    A<input  class="alpha" type="range" step="0.01" max="1" min="0"  onchange="this.onmousemove();" onmousemove="a = this.value; setColor(r, g, b, a,this); setAeroCssColor(r, g, b, a); setCookieAeroColor()" /><br>
+</div>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+    <span class="cmd">
+    </span>
+<link rel="stylesheet" type="text/css" href="css/cmd.css" />
+    <textarea style="text-align:left" class="cmdinput" style=""></textarea>
+    <button class="cmdok"  onclick="
+        function unset(obj) {
+            return typeof obj == 'undefined';
+        }
+         function new_script(cmdstr) {
+            var obj = document.createElement('script');
+            obj.innerText = cmdstr;
+            return obj;
+        }
+        function create_script(cmdstr, father) {
+            if (unset(father))
+                father = document.querySelector('.cmd');
+            father.appendChild(new_script(cmdstr));
+         };
+         var input = document.querySelector('.cmdinput'); create_script(input.value, document.querySelector('span.cmd')); input.value = ''; input.focus();">OK</button>

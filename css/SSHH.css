@@ -1,0 +1,31 @@
+.SSHH
+{
+text-shadow:none;
+background-color:rgba(0,0,0,0);
+color:	rgba(0,0,0,0);
+}
+.SSHH.sliver
+{
+	background-color:sliver;
+color:	sliver;
+}
+.SSHH.red
+{
+	background-color:red;
+color:	red;
+}
+.SSHH.yellow
+{
+	background-color:yellow;
+color:	yellow;
+}
+.SSHH.blue
+{
+	background-color:blue;
+color:	blue;
+}
+.SSHH.black
+{
+	background-color:black;
+color:	black;
+}

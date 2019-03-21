@@ -1,0 +1,115 @@
+﻿[
+  [
+    {
+      "type": "background",
+      "url": "http://www.manpingou.com/uploads/allimg/170128/25-1F12QK2295J.jpg"
+    },
+    {
+      "type": "character",
+	  "id": "喵喵",
+	  "name": "喵喵",
+      "url": "http://www.cc.ntut.edu.tw/~t105590029/pages/VisualNovelTest/HIBIKI1.png"
+    },
+    {
+      "type": "talk",
+      "text": "喵"
+    },
+    {
+      "type": "talk",
+      "text": "從今天開始我是負責擔任妳的女僕的喵喵唷~主人♥"
+    },
+    {
+      "type": "talk",
+      "text": "請問主人今天早餐想吃什麼呢?喵喵可以幫你去學校餐廳準備唷!"
+    },
+    {
+      "type": "select",
+      "option": [
+        {
+          "text": "炒麵麵包",
+          "tag": "炒麵麵包"
+        },
+        {
+          "text": "丹丹漢堡",
+          "tag": "丹丹漢堡"
+        },
+        {
+          "text": "你",
+          "tag": "你"
+        }
+      ]
+    },
+    {
+      "type": "tag",
+      "tag": "炒麵麵包"
+    },
+    {
+      "type": "talk",
+      "text": "好的！了解了，主人。"
+    },
+    {
+      "type": "hide",
+      "object": "character"
+    },
+    {
+      "type": "talk",
+      "text": "..."
+    },
+    {
+      "type": "show",
+      "object": "character"
+    },
+    {
+      "type": "talk",
+      "text": "主人！我回來了"
+    },
+    {
+      "type": "jump",
+      "tag": "GoodEnd"
+    },
+    {
+      "type": "tag",
+      "tag": "丹丹漢堡"
+    },
+    {
+      "type": "talk",
+      "text": "太遠了！你這是在欺負人家嗎"
+    },
+    {
+      "type": "jump",
+      "tag": "BadEnd"
+    },
+    {
+      "type": "tag",
+      "tag": "你"
+    },
+    {
+      "type": "talk",
+      "text": "...我討厭，愛虐待動物的人"
+    },
+    {
+      "type": "tag",
+      "tag": "BadEnd"
+    },
+	{
+      "type": "show",
+      "object": "text"
+    },
+    {
+      "type": "text",
+      "text": "BadEnd"
+    },
+    {
+      "type": "jump",
+      "tag": "end"
+    },
+    {
+      "type": "tag",
+      "tag": "GoodEnd"
+    },
+    {
+      "type": "tag",
+      "tag": "end"
+    }
+  ]
+]

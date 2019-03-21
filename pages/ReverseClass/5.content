@@ -1,0 +1,124 @@
+	<style type="text/css">
+        <!--
+		@import url(code-prettify-master/styles/desert.css);
+        -->
+    </style>
+<script type="text/javascript" src="code-prettify-master/loader/run_prettify.js"></script>
+<pre class="prettyprint">
+/*-------------------------第一題-----------------------------*/
+/*
+array 與 allocate的差別在 array之指標是constant 而 mem allocate的是我們宣告的指標變數
+*/
+void test1()
+{
+	int array[40]={0};
+	array++;//error
+
+	int* ptrarr=(int*)calloc(40,sizeof(int));
+	ptrarr++;//pass
+}
+/*
+array無法在runtime時才決定長度 mem allocate則可以
+*/
+void test2()
+{
+	int size;
+	scanf("%d",&size);
+	int array[size];//error
+	int *ptrarr=(int*)calloc(size,sizeof(int));
+}
+/*
+mem allocate在function 或 subroutine結束後 空間不會消失 若將指標回傳可繼續使用
+*/
+int* mem_alive_test(void)
+{
+	int *a= (int*)calloc(5, sizeof(int));
+	return a;
+}
+void mem_alive_test2(int**b)
+{
+	*b = (int*)calloc(5, sizeof(int));
+}
+/*--------------------------------------------------------*/
+</pre>
+<pre class="prettyprint">
+/*-----------------------二三四題-------------------------*/
+// LinkList.cpp : 定義主控台應用程式的進入點。
+//
+#include<stdlib.h>
+#include<stdio.h>
+/*
+第二題
+*/
+typedef struct student_t
+{
+ int id;
+ char name[256];
+ int grade;
+ struct student_t* next;
+}student;
+/*
+第三題
+*/
+void addstudent(student** head)
+{
+ student* temp = (student*)malloc(sizeof(student));
+ temp->next = *head;
+ *head = temp;
+ printf("input ID:");
+ scanf("%d", &((*head)->id));
+ printf("input Name:");
+ scanf("%s", (*head)->name);
+ printf("input Grade:");
+ scanf("%d", &((*head)->grade));
+}
+/*
+第四題
+*/
+void deletestudent(student** head)
+{
+ student* temp = *head;
+ *head = (*head)->next;
+ free(temp);
+}
+/*
+測試
+*/
+void printstudent(student *head)
+{
+ if (head->next == NULL)
+  return;
+ printf("id:%d\tname:%s\tgrade:%d\n", head->id, head->name, head->grade);
+ printstudent(head->next);
+}
+int main()
+{
+ student *head, last;
+ last.next = NULL;
+ head = &last;
+ char sw;
+ printf("addstudent : a,c\tdeletestudent : d\tprintstudent : p\tesc : e\n");
+ while ((sw = getchar()) != 'e')
+ {
+  system("CLS");
+  printf("addstudent : a,c\tdeletestudent : d\tprintstudent p\tesc : e\n");
+  switch (sw)
+  {
+  case 'a':
+  case 'c':
+   addstudent(&head);
+   break;
+  case 'd':
+   deletestudent(&head);
+   break;
+  case 'p':
+   printstudent(head);
+   system("pause");
+   break;
+  }
+ }
+ return 0;
+}
+/*--------------------------------------------------------*/
+</per>
+  <button class="google commentButton">G+留言</button>

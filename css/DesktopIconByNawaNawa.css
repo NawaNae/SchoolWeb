@@ -1,0 +1,43 @@
+﻿.icon {
+    width: 64px;
+    box-shadow:none;
+    background:none;
+    display:inline-block;
+    max-height:100px;
+    overflow-y:hidden;
+}
+.icon:hover {
+    background: rgba(0, 121, 255, 0.27);
+    box-shadow: 0 0 1px 1px #92c4c2;
+}
+    .icon > img {
+        height: 64px;
+        width:64px;
+        user-select: none;
+        object-fit:contain;
+    }
+.icon > .text {
+    color: white;
+    text-shadow: 0 0 1px black,0 0 2px black,0 0 4px black;
+    text-align: center;
+    cursor:default;
+}
+.menu .pathtext{
+    position:absolute;
+    top:20px;
+    left:auto;
+    right:auto;
+}
+.menu .icon{
+    text-align:left;
+    display:block;
+    width:unset;
+    max-width:100%;
+    overflow-x:hidden;
+}
+.menu .icon img {
+    display: inline-block;
+}
+.menu .icon .text{
+    display: inline-block;
+}

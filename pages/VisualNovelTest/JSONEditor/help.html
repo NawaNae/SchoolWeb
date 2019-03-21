@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    按input後會生成JSON碼，可以用copy複製
+    <br>
+    按preview可以直接在下方生成動態小說預覽<br>
+    按完請按start開始
+    <br>
+    指令介紹 換行代表一個新的指令 指令參數用空格隔開，用空格請用全形
+    <ol>
+        <li>
+            background 圖片網址
+            <ul>
+                <li>指定背景為該網址圖片</li>
+            </ul>
+        </li>
+        <li>
+            character 圖片網址 角色名稱 角色id(不可與其他重複)(可不填)
+            <ul>
+                <li>指定角色為該網址圖片</li>
+                <li>顯示的角色名稱複</li>
+                <li>id不可與其他角色重複</li>
+            </ul>
+        </li>
+        <li>
+            talk 對話框文字
+            <ul>
+                <li>改變對話框內文字</li>
+            </ul>
+        </li>
+        <li>
+            text 全螢幕文字
+            <ul>
+                <li>改變全螢幕文字內容</li>
+                <li>預設不顯示，請先使用show text</li>
+            </ul>
+        </li>
+        <li>
+            tag 標籤名稱
+            <ul>
+                <li>在時間軸中插入一個標籤，以利選擇或跳躍</li>
+                <li>請不要與其他名稱重複</li>
+            </ul>
+        </li>
+        <li>
+            jump 標籤名稱
+            <ul>
+                <li>跳至某個標籤的位置開始執行</li>
+                <li>若找不到標籤執行下一步</li>
+                <li>若標籤名稱為NEXT_STEP則執行下一步</li>
+            </ul>
+        </li>
+        <li>
+            select 選項文字1,標籤名稱1;選項文字2,標籤名稱2;   ....  ;選項名稱n,標籤名稱n
+            <ul>
+                <li>逗號前方為選項文字內容，後方為欲跳往的標籤名稱</li>
+                <li>用分號分隔所有選項</li>
+                <li>若找不到標籤執行下一步</li>
+                <li>若標籤名稱為NEXT_STEP則執行下一步</li>
+            </ul>
+        </li>
+        <li>
+            show 物件
+            <ul>
+                <li>顯示某個物件</li>
+                <li>物件列表<ol>
+    <li>
+        character<ul><li>角色圖</li></ul>
+    </li>
+    <li>
+        background<ul><li>背景圖</li></ul>
+    </li>
+    <li>
+        talk
+        <ul><li>對話框</li></ul>
+    </li>
+    <li>
+        text
+        <ul><li>全螢幕文字框</li></ul>
+    </li>
+
+</ol></li>
+                
+            </ul>
+        </li>
+        <li>
+            hide 物件
+            <ul>
+                <li>隱藏某個物件</li>
+                <li>
+                    物件列表
+                    <ol>
+                        <li>
+                            character<ul><li>角色圖</li></ul>
+                        </li>
+                        <li>
+                            background<ul><li>背景圖</li></ul>
+                        </li>
+                        <li>
+                            talk
+                            <ul><li>對話框</li></ul>
+                        </li>
+                        <li>
+                            text
+                            <ul><li>全螢幕文字框</li></ul>
+                        </li>
+                        
+                    </ol>
+                </li>
+
+            </ul>
+        </li>
+        
+        </ol>
+<pre>範例
+character http://www.cc.ntut.edu.tw/~t105590029/pages/VisualNovelTest/HIBIKI1.png 喵喵 喵喵
+talk 主人我最愛你了
+talk 那你呢?
+select 我最愛你了,NEXT_STEP;我喜歡你是我的寵物阿,good
+hide character
+show text
+text 你被殺了
+hide text
+show character
+talk 永遠再一起了呢♥
+jump end
+tag good
+talk 我會讓你愛我的
+tag end
+</pre>
+</body>
+</html>

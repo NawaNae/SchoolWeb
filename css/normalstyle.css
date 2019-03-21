@@ -1,0 +1,21 @@
+﻿*{font-family:'微軟正黑體';
+}
+html , body, .container{
+ min-height: 100% !important;
+}
+.header,.footer{
+    min-height:5%;
+background-color:white;
+}
+.content{
+min-height:90%;
+background-color:black;
+color:white;
+}
+header {
+/*position:fixed ;*/
+top:0px;
+margin:0px auto;
+}
+
+

@@ -1,0 +1,16 @@
+/* CSS Document */
+.lrc{
+	background-color:rgba(0,0,0,0.75);
+	color:white;
+	text-shadow:0 0 10px #F90;
+}
+.content>iframe.player
+{
+    height:40px;
+    width:calc(100% - 40px);
+    position:absolute;
+    bottom:4px;
+    left:20px;
+}
+
+

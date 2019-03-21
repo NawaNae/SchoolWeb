@@ -1,0 +1,13 @@
+﻿*{font-family:'微軟正黑體';
+}
+.container{min-height:100%;}
+.header,.footer{
+min-height:5%;
+background-color:white;
+}
+.contain{
+min-height:90%;
+background-color:black;
+color:white;
+}
+

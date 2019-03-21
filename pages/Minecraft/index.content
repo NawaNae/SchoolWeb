@@ -1,0 +1,11 @@
+<div style="color:rgba(0,0,0,1);">
+Server Version : 1.9.0 <br>
+Server Status : <span class="status" style="display:inline-block;"></span><img onclick="POSTRequestToObjHtml('php/pingPort.php',undefined,document.querySelector('.status'));" src="https://images.vexels.com/media/users/3/136695/isolated/lists/41d59faadff9fbbfe97397b8a2dd1303-refresh-icon.png" style="width:32px;height:32px;;" alt="refresh"><br>
+Description : 隨機背景中的 MC 世界 Server<br>
+<script>(function refresh(){POSTRequestToObjHtml('php/pingPort.php',undefined,document.querySelector('.status'))})()</script>
+
+Pictures : <br><blockquote class="imgur-embed-pub" lang="en" data-id="a/LoQHR"><a href="//imgur.com/LoQHR"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script><br>
+Rail Route : <br><iframe src="https://drive.google.com/file/d/0B2HLXTzhrs1UVUd2c2hObVgyUUE/preview" width="1200" height="600"></iframe><br>
+Capital Map : <br><iframe src="https://drive.google.com/file/d/0B2HLXTzhrs1UTGtSalRSQlhUZlE/preview" width="1200" height="600"></iframe><br>
+</div>
+<button class="google commentButton">G+留言</button>

@@ -1,0 +1,28 @@
+                            程式碼擷取
+	<pre class="prettyprint">
+    setlinestyle(0,1,3);
+    setcolor(WHITE);
+    circle(cx,cy,50);
+    fillellipse(cx,cy,50,50);
+    setcolor(YELLOW);
+    circle(cx,cy,50);
+    setcolor(RED);
+    line(cx+35,cy+35,cx-35,cy-35);
+    setcolor(BLACK);
+    line(cx-35,cy+35,cx+35,cy-35);
+    setcolor(COLOR(255,190,0));
+    outtextxy(cx-5,cy-45,"3");
+    outtextxy(cx-45,cy-5,"7");
+    outtextxy(cx+30,cy-5,"29");
+    outtextxy(cx-5,cy+30,"39");
+	</code></pre>
+	<div class="PictureCard">
+	<div class="text">執行結果</div>
+	<img src="http://i.imgur.com/30OdzO2.png">
+	</div>
+	<div class="PictureCard">
+	<div class="text">LOGO設計</div>
+	<img src="http://i.imgur.com/S07SmFi.png">
+	</div>   
+    <script type="text/javascript" src="code-prettify-master/loader/run_prettify.js"></script>
+  <button class="google commentButton">G+留言</button>

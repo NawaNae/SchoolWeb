@@ -1,0 +1,203 @@
+﻿[Lang]
+LangName=繁體中文
+Disable Icon Drag and Move=禁止圖示拖動
+ReAlign Icons=重新排列圖示
+Background Blur=背景模糊
+RealTime Mode=幀數測試模式
+Refresh=更新
+&System=&系統
+Computer=電腦
+Document=檔案
+ControlPanel=控制台
+RasLink=寬頻撥號
+File=檔案
+Folder=資料夾
+Network=網路
+RecycleBin=資源回收桶
+Music=音樂
+Pictures=圖片
+Delete Shortcut=移除捷徑方式
+
+Find Location=打開檔案位置
+&Open=打開(&O)
+&Delete=移除(&D)
+
+Auto Arrange Icons=自動排列圖示
+Full Screen=全屏
+Refresh Icon=更新圖示
+NewFolder=新資料夾
+
+&Exit=退出(&X)
+&Show XLaunchpad=顯示快速啟動面板(&V)
+&Hide XLaunchpad=隱藏快速啟動面板(&H)
+&Hide=隱藏(&H)
+&Settings=設定(&S)
+&About=關於(&A)
+&Desk Mode=桌面模式(&D)
+&Edit Mode=編輯模式(&F3)
+&ReLoad=重新載入
+&Add=增加(&A)
+&New Page=新增頁面(&N)
+&View=查看(&V)
+&Large Icon=大圖示(&R)
+&Medium Icon=中等圖示(&M)
+&Small Icon=小圖示(&N)
+&Custom Size=自訂大小(&C)
+&Auto Arrange Icons=自動排列圖示(&A)
+
+Auto run when Windows starts=開機自啟動
+FadeIn Animation Style=淡入動畫風格
+None=無
+Quick=快速
+Smooth (Need Aero)=平滑(需開啟Aero)
+Enabled Desk Mode=啟用桌面模式
+Enabled Full Screen (When not DeskMode)=啟用全螢幕 (桌面模式下無效)
+Enabled Max Memory Mode=啟用最大記憶體佔用模式
+Enabled Background Blur=啟用背景模糊
+Allow mouse to Drag&Drop to move the icon=允許滑鼠直接拖放移動圖示
+
+XLaunchpad Settings=XLaunchpad快速啟動 設定
+Auto Arrange Icons By App Usage=根據使用頻率自動排列圖示
+General=一般
+Layout=尺寸佈局
+Hotkey=快捷鍵
+About=關於
+Icon Size=圖示大小
+Large Icon=大圖示
+Medium Icon=中等圖示
+Small Icon=小圖示
+Custom Icon Size=自訂大小
+Numbers=圖示個數
+Icon number per row=每行圖示個數
+Rows number per page=每頁圖示行數
+Margins=邊緣大小
+Horz=橫向
+Top=頂部
+Distance between every row=每行之間的距離
+
+F12 key=F12 鍵
+DoubleClick Ctrl key=按兩下 （左）Ctrl 鍵
+DoubleClick Alt key=按兩下（左） Alt 鍵
+Mouse Middle Button=按一下滑鼠中鍵(滑鼠滑輪)
+DoubleClick Mouse Middle  Button=按兩下滑鼠中鍵(滑鼠滑輪)
+Mouse on Screen Top-Left Corner=滑鼠移動到螢幕左上角時
+Mouse on Screen Top-Right Corner=滑鼠移動到螢幕右上角時
+Mouse on Screen Bottom-Left Corner=滑鼠移動到螢幕左下角時
+Mouse on Screen Bottom-Right Corner=滑鼠移動到螢幕右下角時
+Hot Key=快捷鍵
+Hot Mouse Button=滑鼠快捷鍵
+Hot Screen Corner=螢幕熱區
+
+Activation=快捷鍵
+Silence Mode (Can not be activeation by hotkey)=靜默模式 (無法被快捷鍵啟動)
+&Silence Mode=靜默模式
+
+&Shortcut Settings=捷徑方式設定(&S)
+
+
+Shortcut Setting=捷徑方式設定
+Shortcut Path=捷徑方式路徑
+Arguments=參數
+Display Name=顯示名稱
+Drop Here=拖放到此
+Select=選擇
+Clear=清除
+Clear Icon=清除圖示
+OK=確定
+Change Icon...=更換圖示...
+Icon=圖示
+Select &File=選擇檔案(&F)
+Select F&older=選擇資料夾(&O)
+Select Folder...=選擇資料夾...
+Select PNG Icon...=選擇 PNG 圖示
+
+Do not activation when a fullscreen app is running=當運行全屏遊戲/視頻等軟體時不要被啟動
+&Clear RecycleBin=清空資源回收站(&C)
+Show Shortcut Caption=顯示捷徑方式的標題文字
+Shortcut Caption Font and Size=捷徑方式標題的字體和大小
+Select...=選擇...
+Appearance=外觀
+Custom Background Picture=自訂背景圖片
+&Online Update=線上更新
+Already the newest version.=已經是最新版本
+New version was released,update online now?=檢測到新版本，是否線上升級？
+XLaunchpad=XLaunchpad快速啟動
+&Check New Version=檢測新版(&U)
+Auto Check New Version=自動檢測新版本
+Delete Folder=確認移除資料夾
+Choose Language=選擇語言
+Custom Hotkey=自訂快捷鍵
+
+DesktopRightClickMenuItemName=XLaunchpad快速啟動
+SendTo XLaunchpad=傳送到 XLaunchpad快速啟動
+Add Desktop RightClick MenuItem=增加桌面右鍵功能表項目
+Delete Desktop RightClick MenuItem=移除桌面右鍵功能表項目
+Others=其他
+Add "Send To" RightClick MenuItem=增加"傳送到"右鍵功能表到資源管理器
+Delete "Send To" RightClick MenuItem=移除"傳送到"右鍵功能表到資源管理器
+&System Menu=系統功能表(&S)
+&Properties=內容(&P)
+&Desktop=桌面(&D)
+Auto Close up Folder After Launched Shortcut=當啟動捷徑方式後自動收攏資料夾
+
+Icon Cursor uses HandPoint=滑鼠在圖示上時使用手型鼠標
+DoubleClick Desktop to Show/Hide XLaunchpad=按兩下桌面空白處來隱藏/顯示快速啟動面板
+Desktop=桌面
+
+Confirm Shutdown?=確認關機？
+Confirm Restart?=確認重啟？
+Confirm Logout?=確認登出？
+Confirm Sleep?=確認睡眠？
+Internet Explorer=IE瀏覽器
+Browser=瀏覽器
+Shutdown=關機
+Restart=重啟
+Logout=登出
+Sleep=睡眠
+CloseMonitor=關閉顯示器
+Show Confirm Dialog When Delete Shortcut=移除捷徑方式時顯示確認對話方塊
+&Customization=個人化(&D)
+Refresh Background=更新背景
+Multi-Screen=多顯示器
+Screen=顯示器
+&Refresh=更新(&R)
+
+
+Font Setting=字體設定
+Font Name(&F):=字體名稱(&F):
+Size(&S):=大小(&S):
+Color(&C):=顏色(&C):
+Example=示例
+Example(AaBbCc 123)=字體示例(AaBbCc 123)
+Style=風格
+Apply=套用
+Border=邊框
+Shadow=陰影
+Color=顏色
+Opacity=透明度
+Hide Tray Icon=隱藏托盤圖示
+Hide Search Bar=隱藏搜尋欄
+
+&Set As Default Page=設為預設頁(&H)
+Shortcut Caption Two Lines to View=圖示標題顯示為兩行
+Shortcut Caption=圖示標題
+Show Caption When MouseEnter=當滑鼠移入時顯示標題
+Background=背景
+Improve performance and speed of response=用更多記憶體換取更快運行速度
+&Folder Settings=資料夾設定(&S)
+Folder Setting=資料夾設定
+Folder Path=資料夾路徑
+Blur Radius=模糊度
+Multi-Screen Select=多顯示器選擇
+PageIndicator Bottom Offset=頁面指示器底部距離
+URL=網址
+Web URL=網址
+Window Mode(Drag&&Drop to add file/folder)=視窗模式(拖入即可增加檔案/資料夾)
+Enabled Scale Animation Effects When Mouse Click Icon=啟用圖標點擊放大動畫特效
+
+
+Backup/Restore=備份/恢復
+XLaunchpad Backup and Restore=XLaunchpad快速啟動備份和恢復
+Create New Backup=創建新備份
+Delete=刪除
+Restore=恢復

@@ -1,0 +1,97 @@
+<div class="PictureCard">
+<div class="Text">跳球</div>
+<pre class="prettyprint">
+#include"stdlib.h"
+#include"stdio.h"
+#include"graphics.h"
+#include"math.h"
+void move_logo(int cx,int cy,int delayms)
+{
+    cleardevice();
+    setlinestyle(0,1,3);
+    setcolor(WHITE);
+    circle(cx,cy,50);
+    fillellipse(cx,cy,50,50);
+    delay(delayms);
+}
+int main()
+{
+    int const width=600,height=800;
+    int const yini=50;
+    initwindow(width,height,"LOGO");
+    double t=0,ypos=yini;
+    while(true)
+        {
+        t=0;
+        while(ypos<=height-50){
+            move_logo(width/2,ypos,5);
+            t+=0.005;
+            ypos+=pow(t,2)*98;
+            }
+               while(ypos>=yini){
+            move_logo(width/2,ypos,5);
+            t-=0.005;
+            ypos-=pow(t,2)*98;
+            }
+        }
+    getch();
+    closegraph();
+}
+</code></pre>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Z0lggYK8ssw" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="PictureCard">
+<div class="Text">跳LOGO</div>
+<pre class="prettyprint">
+#include"stdlib.h"
+#include"stdio.h"
+#include"graphics.h"
+#include"math.h"
+void move_logo(int cx,int cy,int delayms)
+{
+    cleardevice();
+    setlinestyle(0,1,3);
+    setcolor(WHITE);
+    circle(cx,cy,50);
+    fillellipse(cx,cy,50,50);
+    setcolor(YELLOW);
+    circle(cx,cy,50);
+    setcolor(RED);
+    line(cx+35,cy+35,cx-35,cy-35);
+    setcolor(BLACK);
+    line(cx-35,cy+35,cx+35,cy-35);
+    setcolor(COLOR(255,190,0));
+    outtextxy(cx-5,cy-45,"3");
+    outtextxy(cx-45,cy-5,"7");
+    outtextxy(cx+30,cy-5,"29");
+    outtextxy(cx-5,cy+30,"39");
+    delay(delayms);
+}
+int main()
+{
+    int const width=600,height=800;
+    int const yini=50;
+    initwindow(width,height,"LOGO");
+    double t=0,ypos=yini;
+    while(true)
+        {
+        t=0;
+        while(ypos<=height-50){
+            move_logo(width/2,ypos,5);
+            t+=0.005;
+            ypos+=pow(t,2)*98;
+            }
+               while(ypos>=yini){
+            move_logo(width/2,ypos,5);
+            t-=0.005;
+            ypos-=pow(t,2)*98;
+            }
+        }
+    getch();
+    closegraph();
+}
+</pre>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/GnSB58hEjuU" frameborder="0" allowfullscreen></iframe>
+</div>
+    <script type="text/javascript" src="code-prettify-master/loader/run_prettify.js"></script>
+<button class="google commentButton">G+留言</button>

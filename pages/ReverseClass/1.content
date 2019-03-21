@@ -1,0 +1,65 @@
+
+
+<pre class="prettyprint">
+/*block union area by nawanawa*/
+#include"stdio.h"
+#include"math.h"
+void main()
+{
+    int x1,x2,x3,x4,y1,y2,y3,y4;
+    scanf("%d %d %d %d %d %d %d %d",&x1,&y1,&x2,&y2,&x3,&y3,&x4,&y4);
+    printf("%d",UNION(x1,y1,x2,y2,x3,y3,x4,y4));
+}
+int interSection(int x1,int y1,int x2,int y2,int x3,int y3,int x4,int y4)//交集面積
+{
+    if(x1>x2){swap(x1,x2);}//調整成(小,小)'左下 (大,大)'右上
+     if(y1>y2){swap(y1,y2);}
+     if(x3>x4){swap(x3,x4);}
+     if(y3>y4){swap(y3,y4);}
+    if((min(x2,x4)-max(x1,x3)>=0)&& (min(y2,y4)-max(y1,y3)>=0))//判斷交集是否成立
+    {
+        return (min(x2,x4)-max(x1,x3))* (min(y2,y4)-max(y1,y3));
+    }
+    else
+    {
+        return 0;
+    }
+}
+int area(int x1,int y1,int  x2,int y2)//兩點求面積
+{
+    return fabs(x1-x2)*fabs(y1-y2);
+}
+int UNION(int x1,int y1,int x2,int y2,int x3,int y3,int x4,int y4)//聯集
+{
+    int area1,area2,Un,Inter;
+    area1=area(x1,y1, x2,y2);
+    area2=area(x3,y3, x4,y4);
+    Inter=interSection(x1,y1,x2,y2,x3,y3,x4,y4);
+    return  (area1+area2-Inter);
+}
+int max(int a,int b)//數學max函數
+{
+    if (a>b)
+    {return a;}
+    else
+    {return b;}
+}
+int min(int a ,int b)//數學min函數
+{
+    if (a>b)
+    {return b;}
+    else
+    {return a;}
+}
+void swap(int *a,int *b)//交換函數
+{
+    int temp;
+    temp=*a;*a=*b;*b=temp;
+}
+</pre>
+<div class="PictureCard">
+<img src="http://i.imgur.com/VuH1LiF.png">
+<span class="Text">流程圖</span>
+</div>
+<script type="text/javascript" src="code-prettify-master/loader/run_prettify.js"></script>
+<button class="google commentButton">G+留言</button>
