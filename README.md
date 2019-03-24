@@ -12,7 +12,7 @@ Css3
 Javascript
 JQuery
 #### 介紹
-實作透過Ajax、iframe載入網路內容到自製的視窗(html element)內部的js程式，由css炫染。
+實作透過Ajax、iframe載入網路內容到自製的視窗(html element)內部的js程式，由css渲染。
 PHP提供檔案瀏覽、登入、隨機背景選擇等功能，在大學提供的限制功能PHP下架站。當時並無透過類似firebase等外部資料庫實現其他功能。
 #### 特色
 * 可以動態載入網頁共用css等資源
